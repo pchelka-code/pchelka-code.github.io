@@ -21,3 +21,7 @@
 [title$= "skills"] {
     background-color: violet;
 }
+
+nav > li > a[title*='oll'] {
+    background-color: navy;
+}
