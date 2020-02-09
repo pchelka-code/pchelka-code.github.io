@@ -1,13 +1,15 @@
 .box {
     width: 150px;
     height: 150px;
-    margin: 20px;
-    background-color: teal;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #box1 {
+    background-color: red;
     transition-property: width;
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
 
 #box1:hover {
@@ -15,8 +17,9 @@
 }
 
 #box2 {
+    background-color: blue;
     transition-property: height;
-    transition-duration: 1s;
+    transition-duration: 2s;
 }
 
 #box2:hover {
@@ -24,6 +27,7 @@
 }
 
 #box3 {
+    background-color: green;
     transition: height 2s; width 2s;
 }
 
