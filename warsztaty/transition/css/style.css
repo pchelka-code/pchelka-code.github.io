@@ -6,6 +6,10 @@
     margin-right: auto;
 }
 
+.box:hover {
+    cursor: pointer;
+}
+
 #box1 {
     background-color: red;
     transition-property: width;
