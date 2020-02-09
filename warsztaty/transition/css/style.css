@@ -1,0 +1,34 @@
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: teal;
+}
+
+#box1 {
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+#box1:hover {
+    width: 300px;
+}
+
+#box2 {
+    transition-property: height;
+    transition-duration: 1s;
+}
+
+#box2:hover {
+    height: 300px;
+}
+
+#box3 {
+    transition: height 2s; width 2s;
+}
+
+#box3:hover {
+    height: 300px;
+    width: 300px;
+}
+
