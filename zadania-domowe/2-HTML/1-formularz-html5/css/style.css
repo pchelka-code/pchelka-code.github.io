@@ -1,0 +1,31 @@
+form {
+    background-color: olivedrab;
+    color: white;
+    padding: 20px;
+}
+form input, form select {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    float: left;
+}
+
+#message {
+    width: 300px;
+    height: 100px;
+}
+
+#submit {
+    width: 70px;
+    height: 30px;
+    background-color: yellow;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 15px;
+}

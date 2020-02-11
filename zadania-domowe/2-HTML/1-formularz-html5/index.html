@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form action="https://formspree.io/a.e.nowicka@gmail.com" method="POST">
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="surname">Nazwisko:</label>
+        <input type="text" name="surname" id="surname">
+        <br>
+        <label for="email">Adres email:</label>
+        <input type="email" name="_replyto" id="email">
+        <br>
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" name="phone" id="phone">
+        <br>
+        <label for="city">Wybierz miasto</label>
+        <select name="city" id="city">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+        </select>
+        <br>
+        <label for="gender">Płeć</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Mężczyzna</label>
+        <br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Kobieta</label>
+        <br>
+        <input type="checkbox" name="agreement" id="agreement">
+        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+        <br>
+        <label for="message">Wiadomość:</label>
+        <textarea name="message" id="message">
+        </textarea>
+        <br>
+        <input type="submit" id="submit" value="wyślij">
+
+    </form>
+</body>
+</html>
