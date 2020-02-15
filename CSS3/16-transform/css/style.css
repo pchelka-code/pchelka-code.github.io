@@ -1,0 +1,9 @@
+img {
+    height: 250px;
+    width: auto;
+    transition: all 1s;
+}
+
+.rotate img:hover {
+    transform: rotate(250deg);
+}
