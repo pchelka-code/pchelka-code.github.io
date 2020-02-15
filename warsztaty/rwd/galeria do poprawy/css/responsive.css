@@ -20,7 +20,7 @@ figure {
 
 @media (max-width:768px) {
     figure {
-        width: 90%;
+        width: 100%;
     }
 }
 
