@@ -145,3 +145,28 @@ a.wrapper-item {
     object-fit: cover;
     object-position: center;
 }
+
+/* stylowanie sekcji kontakt */
+
+form > div {
+    max-width: 700px;
+    margin: auto;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px;
+    margin: 5px;
+    flex-basis: 40%;
+}
+
+textarea {
+    flex-basis: 81.5%;
+    padding: 10px;
+    margin: 10px;
+    height: 70px;
+}
+
