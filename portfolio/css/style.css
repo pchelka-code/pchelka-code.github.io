@@ -177,3 +177,9 @@ div i {
     margin-top: 20px;
 }
 
+/* Stylowanie stopki */
+
+#footer {
+    background-color: #f2f1ed;
+    height: 100px;
+}
