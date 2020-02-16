@@ -1,0 +1,45 @@
+/* Czcionka do agency */
+/* font-family: 'Dancing Script', cursive; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+}
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+
+h2 {
+    text-transform: capitalize;
+    font-style: italic;
+    color: white;
+}
+
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: goldenrod;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main {
+    height: 65vh;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
