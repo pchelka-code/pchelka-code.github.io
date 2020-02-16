@@ -91,7 +91,7 @@ nav ul li a {
 
 section {
     text-align: center;
-    margin-top: 50px;
+    padding: 20px;
 }
 
 .container {
@@ -120,4 +120,28 @@ h3 {
     line-height: 1.7;
     max-width: 700px;
     margin: 20px auto 20px auto;
+}
+
+/* stylowanie sekcji portfolio */
+
+.portfolio {
+    background-color: #f2f1ed;
+}
+
+.wrapper {
+    margin-top: 40px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a.wrapper-item {
+    flex-basis: 25%
+}
+
+.wrapper-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
