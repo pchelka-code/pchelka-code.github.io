@@ -170,3 +170,10 @@ textarea {
     height: 70px;
 }
 
+div i {
+    color: #007bff;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
