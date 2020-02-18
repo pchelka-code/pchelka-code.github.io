@@ -13,10 +13,6 @@ body {
     background-image: url(../obrazy/man-1.jpg);
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
 }
 
 p {
@@ -24,17 +20,49 @@ p {
     text-transform: uppercase;
     font-size: 30px;
     padding: 0 20px;
+    margin: 10px;
 }
 
-div p:last-child {
+div.text p:last-child {
     font-size: 40px;
     font-weight: 800; 
 }
 
+.text {
+    padding: 40vh 10px;
+}
+
 /* responsywność */
 
-/* @media (min-width:1170px) {
-    div {
-        height: 100vh;
+@media (min-width:992px) and (max-width:1170px) {
+    .main {
+        height: 70vh;
+        background-image: url(../obrazy/man-2.jpg);
     }
-} */
+
+    p {
+        transform: scale(0.7);
+    }
+
+    .text {
+        margin: 0;
+        padding: 10vh 0 0 43vw;
+    }
+}
+
+@media (max-width:991px) {
+    .main {
+        height: 50vh;
+        text-align: center;
+    }
+    
+    .text {
+        padding: 55vh 10px;
+    }
+    
+    p {
+        color: black;
+        transform: scale(0.75);
+        font-weight: 800;
+    }
+}
