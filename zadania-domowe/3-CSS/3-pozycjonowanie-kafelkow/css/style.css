@@ -1,34 +1,116 @@
-.header {
-    background-color: #edcf96;
-    height: 100px;
-    width: 500px;
-}
-
-p{
+body {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 }
 
-.middle {
-    height: 500px;
+p {
+    padding: 50px;
+    font-size: 35px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.main {
     width: 500px;
+    margin: auto;
+    height: 800px;
+}
+
+.bez {
+    background-color: #edcf96;
+}
+
+.violet {
+    background-color: #7a66e6;
+}
+
+.ligthviolet {
+    background-color: #b18eec;
+}
+
+.blue {
+    background-color: #2a6fc2;
+}
+
+.lightblue {
+    background-color: #659ee3;
+}
+
+.head {
+    width: 500px;
+    height: 18%;
 }
 
 .footer {
     width: 500px;
-    height: 70px;
-    background-color: #edcf96;
+    height: 10%;
 }
 
-section > div {
-    background-color: orchid;
-    height: 50px;
+.first {
+    height: 40%;
+    width: 500px;
+    position: relative;
+}
+
+.second {
+    height: 15%;
+    width: 500px;
+    position: relative;
+}
+
+.width44 {
+    width: 44%;
+}
+
+.width54 {
+    width: 54%;
+}
+.first div {
+    display: inline-block;
+}
+.second div {
     display: inline-block;
 }
 
-.width1 {
-    width: 54%;
+#box5 {
+    height: 99%;
+    position: absolute;
+    left: 0;
 }
 
-.width2 {
-    width: 44%;
+#box6 {
+    height: 99%;
+    position: absolute;
+    right: 0;
+}
+
+#box1 {
+    height: 59%;
+    position: absolute;
+    left: 0;
+}
+
+#box2 {
+    height: 44%;
+    position: absolute;
+    right: 0;
+}
+
+#box3 {
+    height: 39%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#box4 {
+    height: 54%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+div {
+    margin: 1px 0 1px 0;
 }
