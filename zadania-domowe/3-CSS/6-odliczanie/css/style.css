@@ -1,0 +1,107 @@
+body {
+    background-color: coral;
+}
+
+div {
+    position: relative;
+    width: 50%;
+    height: 60%;
+    text-align: center;
+    margin: 70px auto;
+}
+
+p {
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.liczba {
+    visibility: hidden;
+}
+
+.box10 {
+    animation-name: licznik;
+    animation-duration: 1s;
+}
+
+.box9 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+.box8 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 2s;
+}
+
+.box7 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+.box6 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 4s;
+}
+
+.box5 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 5s;
+}
+
+.box4 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 6s;
+}
+
+.box3 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 7s;
+}
+
+.box2 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 8s;
+}
+
+.box1 {
+    animation-name: licznik;
+    animation-duration: 1s;
+    animation-delay: 9s;
+}
+
+.box0 {
+    animation-name: tekst;
+    animation-duration: 1s;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes licznik {
+    0%, 100% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+}
+
+@keyframes tekst {
+    0% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
