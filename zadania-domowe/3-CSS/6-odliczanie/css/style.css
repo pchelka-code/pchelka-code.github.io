@@ -83,6 +83,7 @@ p {
 
 .box0 {
     animation-name: tekst;
+    font-size: 70px;
     animation-duration: 1s;
     animation-delay: 10s;
     animation-fill-mode: forwards;
