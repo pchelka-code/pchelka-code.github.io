@@ -3,6 +3,8 @@
 }
 .main {
     max-width: 1200px;
+    height: 500px;
+    font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     color: white;
@@ -14,32 +16,80 @@ p {
     margin: 0;
 }
 
-#header {
+.header {
     background-color: red;
     flex-basis: 100%;
-    padding: 5px;
+    padding: 12px;
+    height: 10%;
 }
 
-#left {
+.left {
     background-color: green;
     flex-basis: 20%;
     padding: 5px;
 }
 
-#lorem {
+.lorem {
     background-color: mediumaquamarine;
     flex-basis: 60%;
     padding: 10px 5px 60px 5px;
+    height: 80%;
 }
 
-#right {
+.right {
     background-color: pink;
     flex-basis: 20%;
     padding: 5px;
 }
 
-#footer {
+.footer {
     background-color: purple;
     flex-basis: 100%;
-    padding: 5px;
+    padding: 12px;
+    height: 10%;
+}
+
+/* responsywność */
+
+@media (min-width:768px) and (max-width:992px) {
+    .left {
+        flex-basis: 100%;
+        order: 1;
+        height: 40%;
+    
+    }
+
+    .footer {
+        order: 2;
+    }
+
+    .right {
+        flex-basis: 25%;
+    }
+
+    .lorem {
+        flex-basis: 75%;
+        height: 40%;
+    }
+}
+
+@media (max-width:767px) {
+    .main {
+        height: 100vh;
+    }
+
+    div.main p {
+        flex-basis: 100%;
+    }
+
+    .left, .lorem, .right {
+        height: 27%;
+    }
+    .header {
+        order: -2;
+    }
+
+    .lorem {
+        order: -1;
+    }
 }
