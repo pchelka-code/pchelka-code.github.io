@@ -1,0 +1,28 @@
+.main {
+    max-width: 1200px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header {
+    background-color: red;
+}
+
+#left {
+    background-color: green;
+}
+
+#lorem {
+    background-color: mediumaquamarine;
+}
+
+#right {
+    background-color: pink;
+}
+
+#footer {
+    background-color: purple;
+}
