@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 .main {
     max-width: 1200px;
     text-align: center;
@@ -7,22 +10,36 @@
     flex-wrap: wrap;
 }
 
+p {
+    margin: 0;
+}
+
 #header {
     background-color: red;
+    flex-basis: 100%;
+    padding: 5px;
 }
 
 #left {
     background-color: green;
+    flex-basis: 20%;
+    padding: 5px;
 }
 
 #lorem {
     background-color: mediumaquamarine;
+    flex-basis: 60%;
+    padding: 10px 5px 60px 5px;
 }
 
 #right {
     background-color: pink;
+    flex-basis: 20%;
+    padding: 5px;
 }
 
 #footer {
     background-color: purple;
+    flex-basis: 100%;
+    padding: 5px;
 }
