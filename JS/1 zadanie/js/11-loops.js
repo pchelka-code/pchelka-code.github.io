@@ -35,19 +35,20 @@ Pętla forEach
 //     console.log( "Element z Indexem: " + index + " ma wartość " + element );
 //});
 
-/* Pętla for in */
 
-/*
+/* Pętla for in 
+literacja po tablicy*/
+
 let person = {
     name: 'Krystian',
-    age: 35
+    age: 35,
+    surname: 'Kowalski',
+    salary: 1500
 }
 
 for(let key in person) {
-    console.log(person[key]);
+    console.log(key, person[key]);
 }
-*/
-
 
 
 
@@ -58,7 +59,7 @@ Pętla while
 */
 let it = 0;
 while ( it < 10 ) {
-//    console.log(it);
+   console.log(it);
     it++;
 }
 
@@ -67,7 +68,7 @@ while ( it < 10 ) {
 /*
 
 Pętla do while
-
+warunek w do wykona się nawet jeśli ten z while jest niespełniony (ale raz)
 */
 let iter = 20;
 do {
