@@ -12,7 +12,14 @@
         <br>
         Nazwisko: <input type="text" name="lname" id="lname" placeholder="nazwisko">
         <br>
+        Email: <input type="email" name="email" id="email">
+        <br>
         <input type="submit" value="Submit">
+    </form>
+
+    <!-- pierwsza wersja, do pojedynczego inputa jesli potzreb jednej wartości -->
+    <!-- <input type="text" onchange="changeInput()" id="change"> -->
+    <input type="text" onchange="changeInput(value)" id="change">
 
     <script src="main.js"></script>
 </body>
