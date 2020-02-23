@@ -1,25 +1,37 @@
 "use strict";
 
-var secondLink = document.getElementsByTagName('a')[1]; //Tworzymy zmienna z drugim linkiem 
+// function funkcja1() {
+//     alert('działa')
+// }
 
-function alarm(e) {
-	e.preventDefault(); //zapobiegamy domyślnej akcji
- 	console.log('kliknięto kolejny link');
-    
-    console.log(e.type);
+function funkcja1() {
+    let mainParagraf = document.getElementById('mainParagraf')
+    mainParagraf.innerText = 'Zmieniłem się'
 }
 
 
-secondLink.onclick = alarm; //wywiłujemy funkcję alarm() na drugim linku po kliknięciu
+
+
+// var secondLink = document.getElementsByTagName('a')[1]; //Tworzymy zmienna z drugim linkiem 
+
+// function alarm(e) {
+// 	e.preventDefault(); //zapobiegamy domyślnej akcji
+//  	console.log('kliknięto kolejny link');
+    
+//     console.log(e.type);
+// }
+
+
+// secondLink.onclick = alarm; //wywiłujemy funkcję alarm() na drugim linku po kliknięciu
 
 
 
-var thirdLink = document.getElementsByTagName('a')[2]; //Tworzymy zmienna z trzecim linkiem 
+// var thirdLink = document.getElementsByTagName('a')[2]; //Tworzymy zmienna z trzecim linkiem 
 
-thirdLink.addEventListener('click', alarm); //wywołujemy funkcję alarm() na trzecim linku po kliknięciu za pomocą event Listenera
+// thirdLink.addEventListener('click', alarm); //wywołujemy funkcję alarm() na trzecim linku po kliknięciu za pomocą event Listenera
 
 
-thirdLink.removeEventListener('click', alarm);
+// thirdLink.removeEventListener('click', alarm);
 
 
 
@@ -47,38 +59,38 @@ thirdLink.removeEventListener('click', alarm);
 
 
 
-/* Zatrzymanie propagacji - po klknięciu w nagłówek console.log(...) wywoła się dwa razy - dodajemy zatrzymanie propagacji i console.log(...) wywołuje się raz */
-function klikHeader() {
-	console.log("kliknąleś w header");
-}
+// /* Zatrzymanie propagacji - po klknięciu w nagłówek console.log(...) wywoła się dwa razy - dodajemy zatrzymanie propagacji i console.log(...) wywołuje się raz */
+// function klikHeader() {
+// 	console.log("kliknąleś w header");
+// }
 
-document.getElementsByTagName('header')[0].onclick = klikHeader; //Wywołaj funkcję na elemencie header
-
-
-function klikH1(e) {
-	e.stopPropagation(); //Odkomentować, żeby pokazać zatrzymanie propaginacji
-	console.log("kliknąleś w h1");
-}
-
-document.getElementsByTagName('h1')[0].onclick = klikH1; //Wywołaj funkcję na elemencie H!
+// document.getElementsByTagName('header')[0].onclick = klikHeader; //Wywołaj funkcję na elemencie header
 
 
+// function klikH1(e) {
+// 	e.stopPropagation(); //Odkomentować, żeby pokazać zatrzymanie propaginacji
+// 	console.log("kliknąleś w h1");
+// }
+
+// document.getElementsByTagName('h1')[0].onclick = klikH1; //Wywołaj funkcję na elemencie H!
 
 
 
-let divsRow = document.getElementsByClassName('row');
 
-for (let element of divsRow) {
-    element.addEventListener('click', () => {
-        console.log('Wyświetla się ToolTip pokazujący info o wierszu');
-    });
-}
 
-let buttonsEdit = document.getElementsByClassName('edit');
+// let divsRow = document.getElementsByClassName('row');
 
-for(let element of buttonsEdit) {
-    element.addEventListener('click', (e) => {
-        e.stopPropagation();
-        console.log('Wyświetla się edycja danych tego wiersza');
-    });
-}
+// for (let element of divsRow) {
+//     element.addEventListener('click', () => {
+//         console.log('Wyświetla się ToolTip pokazujący info o wierszu');
+//     });
+// }
+
+// let buttonsEdit = document.getElementsByClassName('edit');
+
+// for(let element of buttonsEdit) {
+//     element.addEventListener('click', (e) => {
+//         e.stopPropagation();
+//         console.log('Wyświetla się edycja danych tego wiersza');
+//     });
+// }
