@@ -7,7 +7,48 @@
 function funkcja1() {
     let mainParagraf = document.getElementById('mainParagraf')
     mainParagraf.innerText = 'Zmieniłem się'
+    mainParagraf.style.color = 'red'
+    mainParagraf.style.fontSize = '50px'
+    let divZSpan = document.getElementsByClassName('even')
+    console.log('divZSpan', divZSpan[0].childNodes)
+    let childrens = divZSpan[0].childNodes
+    childrens.forEach(element => {
+        if (element.nodeName == "SPAN") {
+            console.log(element)
+            element.innerText = 'zmiana'
+        }
+    })
 }
+
+
+let btnMain = document.getElementById('btn-hotel')
+// drugi spoób, bez wpisywania w html, najbardziej polecany
+// btnMain.addEventListener('click', funkcja1)
+
+
+//trzeci sposób
+btnMain.onclick = funkcja1
+
+
+
+
+// opcja wybrania pojedynczego elementu span
+// function funkcja1() {
+//     let mainParagraf = document.getElementById('mainParagraf')
+//     mainParagraf.innerText = 'Zmieniłem się'
+//     mainParagraf.style.color = 'red'
+//     mainParagraf.style.fontSize = '50px'
+//     let divZSpan = document.getElementsByClassName('even')
+//     console.log('divZSpan', divZSpan[0].childNodes)
+//     let childrens = divZSpan[0].childNodes
+//     childrens.forEach((element, index) => {
+//         if (element.nodeName == "SPAN" && index ===3) {
+//             console.log(element)
+//             element.innerText = 'zmiana'
+//         }
+//     })
+// }
+
 
 
 
