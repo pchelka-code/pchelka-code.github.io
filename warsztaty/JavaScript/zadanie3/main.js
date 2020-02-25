@@ -7,7 +7,6 @@ function send (event) {
         email: document.getElementById('email').value
     }
     console.log(person)
-    // console.log(person.imie)
 
 }
 
