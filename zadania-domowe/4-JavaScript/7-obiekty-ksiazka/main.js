@@ -26,7 +26,7 @@ let bibiloteczka = [wiedzmin,dresden,carbon]
 function iloscPrzeczytanych() {
     let liczbaPrzeczytanych = 0;
     bibiloteczka.forEach(function(element) {
-        if(element.przeczytana) {
+        if(element.przeczytana == true) {
             liczbaPrzeczytanych +=1;
         }
         console.log(element.opiszKsiazke());
