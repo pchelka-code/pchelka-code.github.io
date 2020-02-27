@@ -1,18 +1,15 @@
-// function sortowanie(param1) {
-//     let text = param1.split('')
-//     let text2 = text.sort()
-//     let text3 = text2.join('')
-//     return text3
-// }
+let tablica = [1,2,3,4,5,6];
 
-// let wynik = sortowanie('Akademia108');
-// console.log('Wynik', wynik)
+function SumaIloczyn(zmienna) {
+    let suma = 0;
+    let iloczyn = 1;
+    for (let i = 0; i < zmienna.length; i++) {
+        suma += zmienna[i];
+        iloczyn *= zmienna[i];
+    }
 
-//wersja skórocna
-function sortowanie(param1) {
-    let text = param1.split('').sort().join('')
-    return text
+    console.log('Wynik dodawania: ', suma);
+    console.log('Wynik mnożenia: ', iloczyn);
 }
 
-let wynik = sortowanie('Akademia108');
-console.log('Wynik funkcji:', wynik)
+SumaIloczyn(tablica);
