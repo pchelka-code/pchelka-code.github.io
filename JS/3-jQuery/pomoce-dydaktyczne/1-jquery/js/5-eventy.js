@@ -21,5 +21,13 @@ $(function () {
 		}
 	});
 
+	$('p').click(function() {
+		alert(123)
+	})
+
+// inna wersja zapisu
+	// $('p').click( () => {
+	// 	alert(123)
+	// })
 
 });
