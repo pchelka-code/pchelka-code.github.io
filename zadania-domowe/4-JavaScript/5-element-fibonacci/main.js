@@ -12,7 +12,7 @@ function fibo(n) {
         console.log('Wartość 2 wyrazu ciągu Fibonacciego: ', par2);
     }
     else {
-        for (let i=1; i<parN; i++) {
+        for (let i=2; i<parN; i++) {
             parK = par2 + par1;
             par1 = par2;
             par2 = parK;
