@@ -17,7 +17,7 @@ btnMain.addEventListener('click', dodanieItemu)
 // - musisz pobrać obecną ilość item'ów w liście, aby dodać numer kolejnego
 // - musisz stworzyć w JavaScript nowy element w HTML i dodać go do listy używając odpowiedniej do tego metody w JS :)
 
-// Inna wersja
+// Inna wersja:
 // document.getElementById('btn').addEventListener('click', dodanieItemu)
 
 // function createLi () {
