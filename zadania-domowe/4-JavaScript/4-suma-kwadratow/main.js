@@ -17,7 +17,6 @@ let num = [0,1,2,3,4,5];
 
 function sumaKwadratow () {
     let kwadrat = 0;
-    let suma = 0;
     for(let i=0; i< num.length; i++) {
         kwadrat += Math.pow(num[i],2);
     }
