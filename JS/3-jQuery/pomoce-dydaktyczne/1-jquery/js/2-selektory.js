@@ -15,4 +15,10 @@ $(function () {
 	var paragraphTwo = $('.paragraf');
 	console.log(paragraphTwo);
 
+	let spans = $('span');
+	console.log(spans);
+
+	let paragraf1 = $('p#paragraf1')
+	console.log(paragraf1);
+
 });
