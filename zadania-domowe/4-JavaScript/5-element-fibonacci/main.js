@@ -26,13 +26,13 @@ fibo(11);
 
 
 // Inna wersja
-let num = [0,1]
-let wynik = [0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987]
+// let num = [0,1]
+// let wynik = [0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987]
 
-function fibo2 (n) {
-    let nowy = num[num.length-1] + num[num.length -2]
-    num.push(nowy)
-}
-console.log(num[num.length-1])
+// function fibo2 (n) {
+//     let nowy = num[num.length-1] + num[num.length -2]
+//     num.push(nowy)
+// }
+// console.log(num[num.length-1])
 
-fibo2(12)
+// fibo2(12)
