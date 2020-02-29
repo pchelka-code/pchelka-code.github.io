@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz zamawiania pizzy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="name" id="name" placeholder="Imię">
+        <br>
+        <input type="text" name="lastname" id="lastname" placeholder="Nazwisko">
+        <br>
+        <input type="text" name="street" id="street" placeholder="Ulica">
+        <br>
+        <input type="text" name="number" id="number" placeholder="Nr domu/mieszkania">
+        <br>
+        <input type="text" name="postcode" id="postcode" placeholder="Kod pocztowy">
+        <br>
+        <input type="text" name="city" id="city" placeholder="Miasto">
+        <br>
+        Pizza: 
+        <select name="pizza" id="pizza">
+            <option value="0" selected>-- Wybierz Pizzę --</option>
+            <option value="1">Hawajska</option>
+            <option value="2">Meksykańska</option>
+            <option value="3">Marinara</option>
+            <option value="4">Wiejska</option>
+            <option value="5">Randomowa pizza</option>
+        </select>
+
+        <span id="price">0 zł</span>
+
+        <div>
+            <p>Wybierz sos do pizzy:</p>
+            <input type="checkbox" id="pomidor">
+            <label for="pomidor">sos pomidorowy</label>
+            <br>
+            <input type="checkbox" id="czosnek">
+            <label for="czosnek">sos czosnkowy</label>
+        </div>
+        <br>
+        <input type="checkbox" id="agreement" name="agreement">
+        <label for="agreement">Wyrażam zgodę na realizację zamówienia.</label>
+
+        <br>
+        <input type="submit" value="Zamów" id="button">
+
+        <ul id="errors"></ul>
+    </form>
+
+
+  <!-- Skrypt jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Custom Scripts	-->
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
