@@ -39,8 +39,69 @@ $(function (){
     })
 
 
+// 1. Po kliknięciu pobiera wszystkie dane i 2. waliduje czy formularz jest wypełniony
+$('#pizza-order').submit(function (e){
+    e.preventDefault()
+    let firstName = $('#name').val()
+    let lastName = $('#lastName').val()
 
+    let street = $('#street').val()
+    let streetNo = $('#number').val()
 
+    let postCode = $('#postcode').val()
+    let city = $('#city').val()
+
+    let pizza = $('#pizza').val()
+
+    let tomatoSouce = $('#pomidor').is(':checked')
+    let garlicSouce = $('#czosnek').is(':checked')
+// przy inpucie typu chceckbox .is(':checked') sprawdza czy jest zaznaczony
+    let agree = $('#agreement').is(':checked')
+
+    let error = []
+    $('#errors').empty()
+
+    if (firstName === '') {
+        error.push('Podaj imię')
+    }
+    if (lastName === '') {
+        error.push('Podaj nazwisko')
+    }
+    if (street === '') {
+        error.push('Podaj ulicę')
+    }
+    if (streetNo === '') {
+        error.push('Podaj numer domu')
+    }
+    if (postCode === '') {
+        error.push('Podaj kod pocztowy')
+    }
+    if (city === '') {
+        error.push('Podaj miasto')
+    }
+    if (pizza == 0) {
+        error.push('Wybierz pizzę')
+    }
+    if (tomatoSouce === false && garlicSouce === false) {
+        error.push('Wybierz sos')
+    }
+    if (agree === false) {
+        error.push('Nie zaznaczona zgoda')
+    }
+    console.log(error)
+    error.forEach( item => {
+        let err = '<li>' + item + '</li>'
+        $('#errors').append(err)
+    })
+
+    // stworzenie obiektu zamówienie
+    let zamowienie = {
+        name: firstName + ' ' + lastName,
+        miasto: city,
+        sosy: [tomatoSouce, garlicSouce]
+    }
+    console.log('Zamówienie', zamowienie)
+})
 
 
 
