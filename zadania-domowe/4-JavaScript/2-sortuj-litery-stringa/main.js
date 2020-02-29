@@ -16,3 +16,13 @@ function sortowanie(param1) {
 
 let wynik = sortowanie('Akademia108');
 console.log('Wynik funkcji:', wynik)
+
+// Inna wersja
+const napis = 'Akademia108'
+
+function sortowanie () {
+    let rozbicie = napis.split('')
+    rozbicie.sort() //sortuje ale nie zwraca nowej wartości
+    let a = rozbicie.join('')
+}
+sortowanie()
