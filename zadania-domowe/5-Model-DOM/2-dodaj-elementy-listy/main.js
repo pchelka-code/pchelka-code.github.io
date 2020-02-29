@@ -1,6 +1,5 @@
-let lista = document.getElementById('items')
-
 function dodanieItemu () {
+    let lista = document.getElementById('items')
     let nowyItem = document.createElement('li');
     let liczbaItemow = document.getElementsByClassName('item').length;
     nowyItem.className = 'item';
@@ -17,3 +16,15 @@ btnMain.addEventListener('click', dodanieItemu)
 // - napisz funkcję obsługującą klik przycisku button
 // - musisz pobrać obecną ilość item'ów w liście, aby dodać numer kolejnego
 // - musisz stworzyć w JavaScript nowy element w HTML i dodać go do listy używając odpowiedniej do tego metody w JS :)
+
+// Inna wersja
+// document.getElementById('btn').addEventListener('click', dodanieItemu)
+
+// function createLi () {
+//     const elementUl = document.getElementById('items').children
+//     let iloscElementow = elementUl.children.length
+//     let newLi = document.createElement('li')
+//     newLi.setAttribute('class', 'item')
+//     newLi.innerHTML = 'Item ' + (iloscElementow +1)
+//     elementUl.appendChild(newLi)
+// }
