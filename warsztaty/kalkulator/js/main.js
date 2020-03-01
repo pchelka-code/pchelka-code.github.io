@@ -22,3 +22,22 @@ document.getElementById('clean').addEventListener('click', clean)
 // let dzialanieDoWykonania = document.getElementById('inputText')
 // let wartoscPobranaZInputDoLiczenia = document.getElementById('inputText').value
 // wartoscPobranaZInputDoLiczenia.value = eval(wartoscPobranaZInputDoLiczenia)
+
+
+// cwiczenia z wykładu 1.03
+
+let number = Math.floor(Math.random()*100)
+fetch(`https://jsonplaceholder.typicode.com/posts/${number}`)
+.then(res => res.json()) 
+.then(res => {
+    document.getElementById('inputText').value = res.title
+    console.log(res)
+}).catch(err => {
+    console.log(err)
+})
+
+// fetch(`https://jsonplaceholder.typicode.com/users/${number}`)
+// .then(res => res.json())
+// .then(res => {
+//     console.log(res)
+// })
