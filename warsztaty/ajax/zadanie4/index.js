@@ -44,3 +44,5 @@ function angielski () {
     elem3.innerText = 'Gortfolio'
     elem4.innerText = 'Contact'
 }
+
+// a jeszcze krócej?
