@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Wprowadź dane</h1>
+    <div class="main-div" id="main-div">
+        Wpłata w PLN:
+        <input type="number" id="wplata">
+        Częstotliwość kapitalizacji:
+        <select name="" id="czestotliwosc">
+            <option value="12">Miesięcznie</option>
+            <option value="4">Kwartalnie</option>
+            <option value="1">Rocznie</option>
+        </select>
+        Liczba lat: 
+        <input type="number" id="lata">
+        <br>
+        Stopa zwrotu w %:
+        <input type="number" id="stopa">
+        <br>
+        <button id="button" onclick=oblicz()>Oblicz</button>
+    </div>
+    <div id="wynik"></div>
+    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
