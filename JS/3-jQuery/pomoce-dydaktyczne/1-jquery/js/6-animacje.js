@@ -2,9 +2,9 @@
 $(function () {
 	'use strict';
 
-function aa () {
-	alert(123)
-}
+// function aa () {
+// 	alert(123)
+// }
 
 // 	$('#hide').click(function() {
 // 		$('.nowydiv').hide('slow')

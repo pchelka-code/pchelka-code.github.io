@@ -30,11 +30,11 @@ $(function () {
   //   "color": "red"
   // })
 
-  let przycisk = $('button#fadeOut')
-  przycisk.css({
-    'backgroundColor' : 'pink',
-    'width' : '300px'
-  })
+  // let przycisk = $('button#fadeOut')
+  // przycisk.css({
+  //   backgroundColor : 'pink',
+  //   width : '300px'
+  // })
 
   // text - podmienia tekst nie czyta tagów, html - czyta tagi 
   // let h1 = $('#first')
@@ -82,17 +82,17 @@ $(function () {
   // console.log("span", $(".nowydiv span"))
   // let allP = $("p");
   // console.log(allP);
-let nowyDiv = $('.nowydiv')
-  $('.nowydiv').append(" append DDDDDDDDDDDDDDDDDDDDDDDDDD")
-  nowyDiv.prepend("prepend() ffffffffffffffffffff")
-  nowyDiv.after("<p>after() dddddderfsdfgdsagsa</p>")
+// let nowyDiv = $('.nowydiv')
+//   $('.nowydiv').append(" append DDDDDDDDDDDDDDDDDDDDDDDDDD")
+//   nowyDiv.prepend("prepend() ffffffffffffffffffff")
+//   nowyDiv.after("<p>after() dddddderfsdfgdsagsa</p>")
   
-  nowyDiv.css({
-    "backgroundColor" : "red",
-    "color": "red"
-  })
-  nowyDiv.addClass("kdjfjdskfjsjkf")
-// $("button").click(function () {
+//   nowyDiv.css({
+//     "backgroundColor" : "red",
+//     "color": "red"
+//   })
+//   nowyDiv.addClass("kdjfjdskfjsjkf")
+// // $("button").click(function () {
 //   $('p').each(function () {
 //     $(this).text("wow")
 //   })
@@ -115,16 +115,17 @@ let nowyDiv = $('.nowydiv')
 // })
 
 $('#hide').click(function (){
-  $(".nowydiv").slideUp(2000)
+  // $(".nowydiv").slideUp(2000)
+  $(".span").animate({color: "red"}, 2000);
 })
 
-$("#fadeOut").click(function () {
-  $("#idDiv").fadeOut(2000)
-})
+// $("#fadeOut").click(function () {
+//   $("#idDiv").fadeOut(2000)
+// })
 
-console.log($("#spanMain"))
+// console.log($("#spanMain"))
 
 
-  $("span").animate({"color": "red"}, 2000);
+//   $("span").animate({"color": "red"}, 2000);
 
 });
