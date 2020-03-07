@@ -1,5 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 a {
@@ -86,7 +87,7 @@ section, footer {
 
 .join form header {
     background-color: rgba(0, 0, 0, 0.35);
-    padding: 1em;
+    padding: 1.2em;
     margin: 0;
 }
 
@@ -132,5 +133,9 @@ section, footer {
     font-size: 1.3em;
     color: #c2c2c2;
     margin: 1.3em 0 1.9em 0;
+}
+
+.join .inner-claim a {
+    margin: .5em;
 }
 
