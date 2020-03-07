@@ -1,0 +1,13 @@
+.cnowy {
+    height: 500px;
+    background-color: hotpink;
+}
+
+.nowy1 {
+    height: 500px;
+    background-color: yellow;
+}
+
+.testowy:nth-child(2) {
+    background-color: lightpink;
+}
