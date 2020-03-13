@@ -1,0 +1,39 @@
+// $base-color: #aa99ff;
+// $base-font-size: 20px;
+// $base-font-family: sans-serif;
+@import "zmienne";
+
+
+// ul {
+//     background-color: $base-color;
+// }
+
+.zmienne {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    padding: $base-font-size;
+    border: $base-font-size solid blue;
+
+    ul {
+        background-color: yellow;
+
+        li {
+            font-weight: 800;
+
+            a {
+                background-color: green;
+                color: $base-color;
+                &:hover {
+                    color: hotpink;
+                }
+            }
+        }
+    }
+}
+
+.jakas-sekcja {
+    background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg);
+    @include background-image;
+    height: 500px;
+}
+
