@@ -1,0 +1,12 @@
+body {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+hr {
+    width: 30%;
+}
+
+button.btn-link {
+    color: orange;
+}
