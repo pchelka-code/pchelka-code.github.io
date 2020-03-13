@@ -1,0 +1,86 @@
+@import "zmienne";
+
+body {
+    box-sizing: border-box;
+    color: white;
+}
+
+.contact-form {
+    background-image: url(../img/background.png);
+    @include background-image;
+}
+
+.navbar-brand {
+    i {
+        color: $color-yellow;
+    }
+}
+
+.navbar-light .navbar-brand {
+     color: white;
+     font-weight: 600;
+     font-size: 2em;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: white;
+}
+
+.navbar-right {
+    justify-content: flex-end;
+}
+
+.fa-phone-alt {
+    font-size: 2em;
+}
+
+.nav-small {
+    font-size: 0.7em;
+}
+
+.nav-small span {
+    font-size: 1.6em;
+}
+
+form {
+    margin: 150px 0 50px 0;
+}
+fieldset {
+    background-color: $color-blue;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.5em;
+    span {
+        color: $color-yellow;
+    }
+}
+
+h3 {
+    font-size: 1em;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em 0.7em;
+    font-size: 0.8em;
+}
+
+form textarea {
+    resize: none;
+}
+
+.btn {
+    background-color: $color-yellow;
+    width: 80px;
+    font-weight: 600;
+}
+
+.footer {
+    background-color: $color-grey;
+    .container {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,66 @@
+body {
+  box-sizing: border-box;
+  color: white; }
+
+.contact-form {
+  background-image: url(../img/background.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.navbar-brand i {
+  color: #ecd407; }
+
+.navbar-light .navbar-brand {
+  color: white;
+  font-weight: 600;
+  font-size: 2em; }
+
+.navbar-light .navbar-brand:hover {
+  color: white; }
+
+.navbar-right {
+  justify-content: flex-end; }
+
+.fa-phone-alt {
+  font-size: 2em; }
+
+.nav-small {
+  font-size: 0.7em; }
+
+.nav-small span {
+  font-size: 1.6em; }
+
+form {
+  margin: 150px 0 50px 0; }
+
+fieldset {
+  background-color: #001d8a;
+  padding: 10px; }
+
+h1 {
+  font-size: 1.5em; }
+  h1 span {
+    color: #ecd407; }
+
+h3 {
+  font-size: 1em; }
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.5em 0.7em;
+  font-size: 0.8em; }
+
+form textarea {
+  resize: none; }
+
+.btn {
+  background-color: #ecd407;
+  width: 80px;
+  font-weight: 600; }
+
+.footer {
+  background-color: #292929; }
+  .footer .container {
+    padding: 30px; }
