@@ -20,71 +20,51 @@ p {
 
 .liczba {
     visibility: hidden;
-}
-
-.box10 {
     animation-name: licznik;
     animation-duration: 1s;
 }
+
 
 .box9 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 1s;
 }
 
 .box8 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 2s;
 }
 
 .box7 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 3s;
 }
 
 .box6 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 4s;
 }
 
 .box5 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 5s;
 }
 
 .box4 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 6s;
 }
 
 .box3 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 7s;
 }
 
 .box2 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 8s;
 }
 
 .box1 {
-    animation-name: licznik;
-    animation-duration: 1s;
     animation-delay: 9s;
 }
 
 .box0 {
+    visibility: hidden;
     animation-name: tekst;
     font-size: 70px;
-    animation-duration: 1s;
     animation-delay: 10s;
     animation-fill-mode: forwards;
 }
