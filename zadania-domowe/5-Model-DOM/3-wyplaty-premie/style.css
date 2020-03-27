@@ -1,0 +1,37 @@
+body {
+    box-sizing: border-box;
+    background-color: beige;
+}
+
+h2 {
+    text-align: center;
+}
+
+#title {
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+}
+
+#title>span {
+    width: 150px;
+    margin: 5px;
+}
+
+div[id^="pracownik"] {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    }
+
+.pracownik {
+    width: 150px;
+    margin: 5px;
+}
+
+.wyplata {
+    margin: 5px 5px 5px 10px;
+}
+
+
+
